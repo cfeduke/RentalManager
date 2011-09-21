@@ -10,4 +10,16 @@
 
 @interface RootViewController : UITableViewController
 
+typedef enum PropertyType {
+    Unit,
+    Townhouse,
+    Mansion
+} PropertyType;
+
+typedef struct {
+    NSString *address;
+    PropertyType type;
+    double weeklyRentalPrice;
+} RentalProperty;
+
 @end
