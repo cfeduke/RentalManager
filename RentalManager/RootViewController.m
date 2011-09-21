@@ -52,7 +52,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return 25;
 }
 
 // Customize the appearance of table view cells.
@@ -64,6 +64,10 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"Rental Property %d", indexPath.row];
+    
+    NSLog(@"Rental Property %d", indexPath.row);
 
     // Configure the cell.
     return cell;
