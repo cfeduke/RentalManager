@@ -19,6 +19,7 @@
 		67508C3C142B99CC00FDF1BC /* city.png in Resources */ = {isa = PBXBuildFile; fileRef = 67508C39142B99CC00FDF1BC /* city.png */; };
 		67508C3D142B99CC00FDF1BC /* mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = 67508C3A142B99CC00FDF1BC /* mountain.png */; };
 		67508C3E142B99CC00FDF1BC /* sea.png in Resources */ = {isa = PBXBuildFile; fileRef = 67508C3B142B99CC00FDF1BC /* sea.png */; };
+		67508C4A142BA95900FDF1BC /* CityMappings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67508C49142BA95900FDF1BC /* CityMappings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		67508C39142B99CC00FDF1BC /* city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city.png; sourceTree = "<group>"; };
 		67508C3A142B99CC00FDF1BC /* mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountain.png; sourceTree = "<group>"; };
 		67508C3B142B99CC00FDF1BC /* sea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea.png; sourceTree = "<group>"; };
+		67508C49142BA95900FDF1BC /* CityMappings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityMappings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				67508C1E142A204D00FDF1BC /* InfoPlist.strings */,
 				67508C21142A204D00FDF1BC /* main.m */,
 				67508C23142A204D00FDF1BC /* RentalManager-Prefix.pch */,
+				67508C49142BA95900FDF1BC /* CityMappings.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				67508C3C142B99CC00FDF1BC /* city.png in Resources */,
 				67508C3D142B99CC00FDF1BC /* mountain.png in Resources */,
 				67508C3E142B99CC00FDF1BC /* sea.png in Resources */,
+				67508C4A142BA95900FDF1BC /* CityMappings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,9 @@ RentalProperty properties[] = {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"CityMappings" ofType:@"plist"];
+    cityMappings = [[NSDictionary alloc] initWithContentsOfFile:path];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -83,12 +86,8 @@ RentalProperty properties[] = {
     
     cell.textLabel.text = address;
     
-    if ([city isEqual:@"Clifton"])
-        cell.imageView.image = [UIImage imageNamed:@"mountain.png"];
-    else if ([city isEqual:@"Sumner"])
-        cell.imageView.image = [UIImage imageNamed:@"sea.png"];
-    else
-        cell.imageView.image = [UIImage imageNamed:@"city.png"];
+    NSString *imageName = [cityMappings objectForKey:city];
+    cell.imageView.image = [UIImage imageNamed:imageName];
     
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Rents for $%0.2f per week", details->weeklyRentalPrice];
     
@@ -168,6 +167,8 @@ RentalProperty properties[] = {
 
 - (void)dealloc
 {
+    [cityMappings dealloc];
+    
     [super dealloc];
 }
 
