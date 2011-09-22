@@ -75,8 +75,22 @@ RentalProperty properties[] = {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    cell.textLabel.text = properties[indexPath.row].address;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Rents for $%0.2f per week", properties[indexPath.row].weeklyRentalPrice];
+    RentalProperty *details = &properties[indexPath.row];
+    
+    int indexOfComma = [details->address rangeOfString:@","].location;
+    NSString *address = [details->address substringToIndex:indexOfComma];
+    NSString *city = [details->address substringFromIndex:indexOfComma + 2];
+    
+    cell.textLabel.text = address;
+    
+    if ([city isEqual:@"Clifton"])
+        cell.imageView.image = [UIImage imageNamed:@"mountain.png"];
+    else if ([city isEqual:@"Sumner"])
+        cell.imageView.image = [UIImage imageNamed:@"sea.png"];
+    else
+        cell.imageView.image = [UIImage imageNamed:@"city.png"];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Rents for $%0.2f per week", details->weeklyRentalPrice];
     
     NSLog(@"Rental Property %@ (%d)", properties[indexPath.row], indexPath.row);
 

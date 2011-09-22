@@ -16,6 +16,9 @@
 		67508C29142A204D00FDF1BC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67508C27142A204D00FDF1BC /* MainWindow.xib */; };
 		67508C2C142A204D00FDF1BC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67508C2B142A204D00FDF1BC /* RootViewController.m */; };
 		67508C2F142A204D00FDF1BC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67508C2D142A204D00FDF1BC /* RootViewController.xib */; };
+		67508C3C142B99CC00FDF1BC /* city.png in Resources */ = {isa = PBXBuildFile; fileRef = 67508C39142B99CC00FDF1BC /* city.png */; };
+		67508C3D142B99CC00FDF1BC /* mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = 67508C3A142B99CC00FDF1BC /* mountain.png */; };
+		67508C3E142B99CC00FDF1BC /* sea.png in Resources */ = {isa = PBXBuildFile; fileRef = 67508C3B142B99CC00FDF1BC /* sea.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		67508C2A142A204D00FDF1BC /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		67508C2B142A204D00FDF1BC /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		67508C2E142A204D00FDF1BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		67508C39142B99CC00FDF1BC /* city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city.png; sourceTree = "<group>"; };
+		67508C3A142B99CC00FDF1BC /* mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountain.png; sourceTree = "<group>"; };
+		67508C3B142B99CC00FDF1BC /* sea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,9 @@
 		67508C1C142A204D00FDF1BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				67508C39142B99CC00FDF1BC /* city.png */,
+				67508C3A142B99CC00FDF1BC /* mountain.png */,
+				67508C3B142B99CC00FDF1BC /* sea.png */,
 				67508C1D142A204D00FDF1BC /* RentalManager-Info.plist */,
 				67508C1E142A204D00FDF1BC /* InfoPlist.strings */,
 				67508C21142A204D00FDF1BC /* main.m */,
@@ -154,6 +163,9 @@
 				67508C20142A204D00FDF1BC /* InfoPlist.strings in Resources */,
 				67508C29142A204D00FDF1BC /* MainWindow.xib in Resources */,
 				67508C2F142A204D00FDF1BC /* RootViewController.xib in Resources */,
+				67508C3C142B99CC00FDF1BC /* city.png in Resources */,
+				67508C3D142B99CC00FDF1BC /* mountain.png in Resources */,
+				67508C3E142B99CC00FDF1BC /* sea.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +296,7 @@
 				67508C34142A204D00FDF1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
